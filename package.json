@@ -3,13 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "run-script-os",
-    "prepare:windows": "@echo windows execution script",
-    "prepare:nix": "@echo nix execution script",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "vercel-build": "npm run prepare && next build"
+    "start": "next start"
   },
   "dependencies": {
     "next": "^12.2.0",
