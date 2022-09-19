@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "run-script-os",
+    "prepare:windows": "@echo windows execution script",
+    "prepare:nix": "@echo nix execution script",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "vercel-build": "npm run prepare && next build"
   },
   "dependencies": {
     "next": "^12.2.0",
@@ -19,8 +23,5 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "run-script-os": "^1.1.6"
-  }
+  "license": "ISC"
 }
